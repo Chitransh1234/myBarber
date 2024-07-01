@@ -1,0 +1,81 @@
+.signup-form {
+    width: 340px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    float: left;
+    /* margin: 0 auto; */
+}
+.signup-form form {
+    margin-bottom: 15px;
+    background: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.signup-form h2 {
+    margin: 0 0 15px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+    min-height: 38px;
+}
+.header {
+    padding: 5px;
+    color: white;
+    background: #1f88eb; /* For browsers that do not support gradients */    
+    background: linear-gradient(to bottom right, #1f88eb, #023ead);
+}
+.signup {
+    text-align: center;
+    width: 100%;
+    float: left;
+    background-image: url(../images/home/bg1.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+
+
+/* 
+
+.signup-form {
+    width: 800px;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+.signup-form form {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: white;
+    background: linear-gradient(to bottom right, #8db5ff, #ffffff);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+    min-height: 38px;
+}
+.header {
+    padding: 5px;
+    color: white;
+    background: #1f88eb;
+    background: linear-gradient(to bottom right, #1f88eb, #023ead);
+}
+.form-input {
+    display: block;
+    width: 50%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .50rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} */
