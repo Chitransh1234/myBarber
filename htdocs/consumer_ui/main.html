@@ -1,0 +1,12 @@
+<script>
+window.onload= load_first_page();
+
+function load_first_page() {
+    var location_id= localStorage.getItem('user_location_id');
+    if(location_id == null) {
+        window.location.replace('default.php');
+    } else {
+        window.location.replace('index.php');
+    }
+}
+</script>
