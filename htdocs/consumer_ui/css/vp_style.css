@@ -1,0 +1,173 @@
+.ob_container {
+    padding-top:80px;
+    width: 80%;
+    margin: 0 10%;
+    float: left;
+}
+.or_container {
+    padding-top: 50px;
+    width: 98%;
+    margin: 0 1%;
+    float: left;
+}
+.img_container, .profile_container {
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+.img_container {
+    padding: 15px 5px;
+    width: 30%;
+    float: left;
+}
+.profile_container {
+    padding: 15px 5px;
+    width: 70%;
+    float: left;
+}
+.head_txt_1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.head_txt_2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: grey;
+}
+.head_txt_3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.head_txt_4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.rate_label {
+    width: 50px;
+    border-radius: 20px;
+    height: 25px;
+    background: linear-gradient(to bottom right, #1f88eb, #023ead);
+    color: white;
+    padding: 0 5px;
+}
+.ext_bcc {
+    padding-top: 25px;
+    min-height: 150px;
+}
+.deliver_info, .offer_info {
+    float: left;
+    width: 305px;
+    margin: 1px;
+}
+.del_check_box {
+    width: 200px;
+    height: 30px;
+    float: left;
+    border: hidden;
+    border-bottom: 2px solid #1f88eb; 
+}
+.del_check_btn {
+    padding: 4px;
+    color: #1f88eb;
+    background-color: white;
+    border: hidden;
+    float: left;
+    outline: none;
+}
+.label {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    border-radius: 50%;
+    border: 1px solid #1f88eb;
+    background: #023ead;
+    color: white;
+}
+.head_txt_5 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 5px;
+    text-align: center;
+}
+.service_card {
+    width: 100%;
+    height: content-fit;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+.service_card .ddp_1 {
+    float: left;
+    width: 80%;
+}
+.service_card .ddp_2 {
+    float: left;
+    width: 20%;
+}
+.ddp_1 #Xbbc1 {
+    width: 75%;
+    padding: 0 10px;
+    float: left;
+}
+.ddp_1 #Xbbc2 {
+    width: 25%;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rating_display_box {
+    background: orange;
+    color: white;
+    font-size: small;
+    font-weight: 600;
+    width: 45px;
+    padding: 0 2px;
+    border-radius: 10%;
+    float: left;
+}
+#rating_count_box {
+    color: grey;
+    font-size: small;
+    font-weight: 600;
+    width: 45px;
+    padding: 0 2px;
+    border-radius: 10%;
+    float: left;
+}
+.service_card .ddp_2 {
+    height: 9vh;
+    background: linear-gradient(to bottom right, #1f88eb, #023ead);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: large;
+}
+.tag_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tags {
+    display: flex;
+    justify-content: space-between;
+}
+@media all and (max-width: 1200px) {
+    .img_container, .profile_container {
+        width: 100%;
+    }
+    .ob_container {
+        width: 100%;
+        margin: 0;
+    }
+    .tag_box {
+        flex-direction: column;
+    }
+}
