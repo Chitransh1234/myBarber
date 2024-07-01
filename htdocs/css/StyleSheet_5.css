@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat',sans-serif;
+}
+
+body {
+ width: 100%;
+}
+
+.header {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+    box-shadow: 3px 2px 7px #818181;
+    float: left;
+    position: fixed;
+    background: white;
+    z-index: 5;
+}
+
+.logout_btn {
+    margin-right: 5px;  
+}
+
+.salute {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 22px;
+    color: rgb(46, 45, 45);
+}
+
+.profile {
+    float: left;
+    margin-left: 5px;
+}
+
+.email {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.usericon {
+    height: 40px; 
+    width: 40px;
+}
+
+.dp {
+    float: left;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #81B618;
+    background: #81B618; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, #81B618, #3C9130); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #81B618, #3C9130); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #81B618, #3C9130); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #81B618, #3C9130); /* Standard syntax (must be last) */
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.main {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.search_base {
+  width: 100%;
+  height: auto;
+  float: left;
+  display: block;
+  box-shadow: 3px 2px 7px #818181;
+}
+
+#querybox {
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid #ddd;
+  width: 78%;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#querybox:hover {
+  border-color: #81B618;
+}
+
+#search {
+  padding: 6px 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+#search:hover {
+  background: #ccc;
+}
+
+.namebar {
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 25px;
+  display: block;
+  background-color: rgb(48, 47, 47);
+
+}
+
+.result {
+  width: auto;
+  height: 110px;
+  font-size: 20px;
+  display: block;
+  margin-left: 1%;
+  margin-right: 1%;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.brandname {
+  float: left;
+  text-align: left;
+  font-size: xx-large;
+  margin-left: 10px;
+}
+
+.price {
+  float: right;
+  font-size: x-large;
+  margin: 0 10px;
+}
+
+.error {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 25px;
+  color: white;   
+  border-radius: 5px;
+  background-color: rgb(216, 8, 36);
+  display: inline-block;
+}
+
+#items {
+  margin: 2% 2%;
+  border: transparent;
+  background: transparent;
+  float: left;
+  width: 45%;
+  height: 45%;
+  font-size: 38px;
+  color: #FFFFFF;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0;
+  background: #81B618; /* For browsers that do not support gradients */    
+  background: -webkit-linear-gradient(left top, #81B618, #3C9130); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #81B618, #3C9130); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #81B618, #3C9130); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #81B618, #3C9130); /* Standard syntax (must be last) */
+}
+
+#product {
+  width: 45%;
+  height: 45%;
+  float: left;
+}
+
+.items {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  float: left;
+  border: 2px solid rgb(231, 231, 231);
+  border-radius: 15px;
+}
+
+#subs {
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  border: transparent;
+  background: transparent;
+  float: right;
+  bottom: 0;
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  color: #FFFFFF;
+  border-radius: 100px;
+  background: #81B618; /* For browsers that do not support gradients */    
+  background: -webkit-linear-gradient(left top, #81B618, #3C9130); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #81B618, #3C9130); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #81B618, #3C9130); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #81B618, #3C9130); /* Standard syntax (must be last) */
+}
+
+.subs {
+  width: 100%;
+  height: initial;
+  background-image: url(../images/home/cover.jpg);
+  position: relative;
+  border-radius: 10px;
+  float: left;
+}
+
+.subs p {
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  padding: 5px 20px;
+}
+
+.subs span {
+  padding: 0 20px;
+  color: white;
+  font-size: 22px;
+  text-align: left;
+  float: left;
+}
+
+@media only screen and (max-width: 800px) {
+  #subs {
+    font-size: 15px;
+    padding-top: 5px;
+    width: 150px;
+    height: 30px;
+  }
+  .subs p {
+    font-size: 15px;
+  }
+  .subs span {
+    font-size: 12px;
+  }
+}
+
+.resultbox {
+  overflow-x: hidden;
+  overflow-x: auto;
+  height: 550px;
+}
+
+.location {
+  display: block; 
+  bottom: 0; 
+  position: fixed;
+  margin: 0 10%; 
+  width: 80%; 
+  height: 45px; 
+  background: #fff; 
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .header { width: 100%; margin-left: 0; margin-right: 0; }
+  .main { width: 100%; margin-left: 0; margin-right: 0; }
+  .location { width: 100%; margin: 0 0; }
+  #items { font-size: 18px; }
+}
+
+/* Siderbar */
+
+.menublock {
+  z-index: 5;
+  position: fixed;
+  width: 280px;
+  min-height: 1000px;
+  left: -300px;
+  background: white;
+  margin-left: 0%;
+  margin-right: 0%;
+  transition: all .3s ease;
+}
+  
+.menublock .tabs {
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  text-align: left;
+  width: 280px;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+.menublock .tabs:hover {
+  background: #81B618;
+  padding-left: 30px;
+}
+
+.brandlogo {
+  flex: 1;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+  padding-top: 15px;
+}
+  
+.toggle-btn {
+  position: absolute;
+  Left: 145%;
+  top: 0px;
+  margin-top: 8px;
+  padding-left: 10%;
+}
+  
+.toggle-btn span {
+  display: block;
+  background-color: rgb(4, 43, 36);
+  width: 35px;
+  height: 5px;
+  margin: 5px;
+}
+
+.menublock.active {
+  Left: 0;
+  background: radial-gradient(#818181, #242424);
+  /*background-color: #585858;*/
+
+}
+
+@media all and (max-width: 800px) {
+
+  .menublock {
+    width: 220px;
+    left: -240px;
+  }
+    
+  .menublock .tabs {
+    font-size: 15px;
+    width: 220px;
+  }
+
+  .menublock .tabs:hover {
+    background: #81B618;
+  }
+    
+  .toggle-btn {
+    position: absolute;
+    Left: 100%;
+    top: 0px;
+    margin-top: 8px;
+    padding-left: 10%;
+  }
+    
+  .toggle-btn span {
+    display: block;
+    background-color: rgb(4, 43, 36);
+    width: 25px;
+    height: 4px;
+    margin: 4px;
+  }
+
+  .menublock.active {
+    Left: 0;
+    background: radial-gradient(#818181, #242424);
+  }
+}
+
+  /* Basic */
+  .btn {
+    float: right;
+    width: 100px;
+    margin-right: 2px;
+  }
+
+  .btn2 {
+    float: right;
+    border: none;
+    padding: 8px;
+    transition: 0.25s;
+    border-radius: 5px;
+  }
+
+  .btn3 {
+    float: right;
+    border: none;
+    height: 50px;
+    width: 40px;
+    transition: 0.25s;
+  }
+
+  .cart_btn {
+    float: right;
+    margin-top: 2px;
+    margin-right: 2px; 
+  }
+
+  .rating {
+    float: left;
+    margin-left: 10px;
+  }
+
+  @media  all and (max-width: 600px) {
+    .brandname {
+      font-size: large;
+      width: 50%;
+    }
+    .price {
+      font-size: large;
+    }
+    .productname {
+      font-size: large;
+    }
+    .btn {
+      width: 80px;
+    }
+    .btn2 {
+      padding: 4px;
+    }
+    .salute {
+      font-size: 16px;
+    }
+    #querybox {
+      font-size: 15px;
+    }
+  }
+  
+  /* ONLY FOR USER ORDER PAGE */
+
+  .producting {
+    color: rgb(92, 92, 92);
+    float: left;
+    margin: 0px 5px;
+    font-size: medium;
+    text-align: left;
+  }
+  
+  .pn, .pq {
+    float: left;
+    margin: 0 5px;
+  }
+
+  .b-name {
+    float: left;
+    margin: 0px 10px;
+    font-size: x-large;
+  }
+
+  .rs {
+    float: right;
+    margin: 0 10px;
+  }
+
+  .rs .fa {
+    color: orange;
+  }
+
+  @media all and (max-width: 500px) {
+    .b-name {
+      font-size: large;
+    }
+    .btn {
+      width: auto;
+    }
+  }
+  
